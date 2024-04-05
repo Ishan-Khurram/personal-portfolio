@@ -1,5 +1,68 @@
-#logo {
-    position: relative;
-    top: 0;
-    left: 5px;
+@font-face {
+  font-family: "Satoshi-Black";
+  src: local("Satoshi-Black"), url("fonts/Satoshi-Black.ttf") format("truetype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.home {
+  padding: 0;
+  height: 100vh;
+  background-color: #495057;
+}
+
+.logo {
+  position: relative;
+  top: 0;
+  left: 10px;
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+  font-weight: 100;
+  color: white
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}
+
+.title1 {
+  font-family: "Satoshi-Black";
+  font-size: 98px;
+  color: #E9ECEF;
+  padding-left: 15%;
+}
+.title2 {
+  font-family: "Satoshi-Black";
+  font-size: 98px;
+  color: #CED4DA;
+  padding-left: 22%;
+}
+
+.title3 {
+  font-family: "Satoshi-Black";
+  font-size: 98px;
+  color: #6C757D;
+  padding-left: 29%;
+}
+
+.intro {
+  font-family: "Satoshi-Black";
+  font-size: 36px;
+  color: #E9ECEF;
+  text-align: center;
 }
