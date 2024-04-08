@@ -42,20 +42,20 @@ body {
 
 .title1 {
   font-family: "Satoshi-Black";
-  font-size: 98px;
+  font-size: clamp(2rem, 6.8vw, 5rem); 
   color: #E9ECEF;
   padding-left: 15%;
 }
 .title2 {
   font-family: "Satoshi-Black";
-  font-size: 98px;
+  font-size: clamp(2rem, 6.8vw, 5rem); 
   color: #CED4DA;
   padding-left: 22%;
 }
 
 .title3 {
   font-family: "Satoshi-Black";
-  font-size: 98px;
+  font-size: clamp(2rem, 6.8vw, 5rem);
   color: #6C757D;
   padding-left: 29%;
 }
@@ -65,4 +65,35 @@ body {
   font-size: 36px;
   color: #E9ECEF;
   text-align: center;
+}
+
+.work {
+  display: none; 
+  position: absolute; 
+  top: 0; 
+  right: 250px; 
+  font-size: 0.75rem;
+  font-family: "Satoshi-Black";
+  text-transform: uppercase;
+  color: #6C757D;
+  padding-top: 10px;
+}
+
+
+@media (min-width: 640px) {
+  .work {
+    display: flex; 
+  }
+}
+
+@media (min-width: 1536px) {
+  .work {
+    font-size: 1rem; 
+  }
+}
+
+@media (min-width: 1920px) {
+  .work {
+    font-size: 1.25rem; 
+  }
 }

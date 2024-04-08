@@ -1,0 +1,15 @@
+/* Navbar.css */
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background: #495057;
+    padding: 20px;
+  }
+  
+  .nav-item {
+    color: #fff;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  

@@ -2,7 +2,9 @@ import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import logo from "assets/images/iklogo.svg";
 import "components/pages/home/home.css";
-import "fonts/Satoshi-Black.ttf"
+import "fonts/Satoshi-Black.ttf";
+import Navbar from "components/navbar/navbar";
+import "components/navbar/navbar.css"
 
 const Home = () => {
   const fullText = "Hi, I'm Ishan Khurram";
@@ -24,6 +26,7 @@ const Home = () => {
 
   return (
     <div className="home">
+      <Navbar />
       <div className="logo">
         <motion.img
           id="logo"
@@ -33,6 +36,9 @@ const Home = () => {
           whileTap={{ scale: 0.9 }}
         />
       </div>
+      <span className="work">
+        <p>Available for work</p>
+      </span>
       <div className="title1">
         <div className="typing-animation">
           {text}
@@ -52,7 +58,10 @@ const Home = () => {
         </div>
       </div>
       <div className="intro">
-        <p>I am an aspiring frontend developer with a passion for turning visions into a reality.</p>
+        <p>
+          I am an aspiring frontend developer with a passion for turning visions
+          into a reality.
+        </p>
       </div>
     </div>
   );
